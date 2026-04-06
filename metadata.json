@@ -1,0 +1,7 @@
+{
+  "name": "Tera Ghar Mera Ghar - JK Super Cement",
+  "description": "A vertical micro-series for home builders. Watch emotional and practical home building journeys.",
+  "requestFramePermissions": [
+    "notifications"
+  ]
+}
