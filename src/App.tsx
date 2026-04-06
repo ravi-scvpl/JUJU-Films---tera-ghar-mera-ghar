@@ -28,6 +28,8 @@ import {
   Star
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import AmanImg from './assests/Aman.png';
+import AshaImg from './assests/Asha.png';
 
 // --- Types ---
 type EmotionalState = 'The Decision' | 'The Conflict' | 'The Sacrifice' | 'The Temptation' | 'The Fulfillment';
@@ -79,8 +81,8 @@ const EPISODES: Episode[] = [
     title: "Anniversary ya Adjustment?",
     hook: "Aman aur Asha ki 3rd anniversary: Ek fancy dinner ya tapakti chhat?",
     synopsis: "Eve of Aman and Asha’s third anniversary. Their rented house in Kanpur is falling apart. When Aman gets news of his ancestral land, a vague 'someday' turns into 'abhi nahi toh kabhi nahi'. But there's a bigger twist: Asha is pregnant.",
-    thumbnail: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=400&h=700&q=80",
-    poster: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=1200&h=800&q=80",
+    thumbnail: AmanImg,
+    poster: AmanImg,
     videoUrl: "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
     duration: "45s",
     emotionalState: 'The Decision',
@@ -92,8 +94,8 @@ const EPISODES: Episode[] = [
     title: "Hamare Time Mein...",
     hook: "Jab ghar ki neev mein bade-buzurgon ki purani soch takrayi modern sapno se.",
     synopsis: "Construction begins, but so does the family drama. Elders push for speed and tradition, while Asha insists on safety for the baby. Aman is caught in the middle. Can the BuildXpert engineer bridge the gap between 'nazar' and soil testing?",
-    thumbnail: "https://images.unsplash.com/photo-1614283233556-f35b0c801ef1?auto=format&fit=crop&w=400&h=700&q=80",
-    poster: "https://images.unsplash.com/photo-1614283233556-f35b0c801ef1?auto=format&fit=crop&w=1200&h=800&q=80",
+    thumbnail: AshaImg,
+    poster: AshaImg,
     videoUrl: "https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
     duration: "52s",
     emotionalState: 'The Conflict',
@@ -104,8 +106,8 @@ const EPISODES: Episode[] = [
     title: "YouTube vs EMI",
     hook: "Jab paise kam pade, toh kya Asha ka YouTube channel banega ghar ka sahara?",
     synopsis: "The middle phase is the hardest. Money is tight, and decision fatigue sets in. Asha’s channel starts growing, creating a new tension: can a house depend on an unpredictable online income? Aman must learn to trust Asha's agency.",
-    thumbnail: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&h=700&q=80",
-    poster: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1200&h=800&q=80",
+    thumbnail: AshaImg,
+    poster: AshaImg,
     videoUrl: "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
     duration: "38s",
     emotionalState: 'The Sacrifice',
@@ -116,8 +118,8 @@ const EPISODES: Episode[] = [
     title: "Sasta Flat ya Apna Ghar?",
     hook: "Rana ne diya ek seductive offer: Zameen becho, ready-made flat lo. Kya Aman bhatak jayega?",
     synopsis: "Exhaustion peaks. A friend offers a 'ready-to-move' 4BHK flat. For Aman, it's relief; for Asha, it's betrayal. The BuildXpert friend must help Aman see that leadership isn't about switching paths when things get hard.",
-    thumbnail: "https://images.unsplash.com/photo-1589156229687-496a31ad1d1f?auto=format&fit=crop&w=400&h=700&q=80",
-    poster: "https://images.unsplash.com/photo-1589156229687-496a31ad1d1f?auto=format&fit=crop&w=1200&h=800&q=80",
+    thumbnail: AmanImg,
+    poster: AmanImg,
     videoUrl: "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
     duration: "60s",
     emotionalState: 'The Temptation'
@@ -127,8 +129,8 @@ const EPISODES: Episode[] = [
     title: "Griha Pravesh aur Naya Mehmaan",
     hook: "MasterChef Mumbai ya Kanpur ka Griha Pravesh? Asha ke sapno ki sabse badi pariksha.",
     synopsis: "The deadline is fixed. Asha gets a call for MasterChef Mumbai. As she leaves, Aman must shoulder the final hustle alone. In a poetic convergence, a baby girl arrives just in time for the housewarming. Permanence earned.",
-    thumbnail: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&h=700&q=80",
-    poster: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=1200&h=800&q=80",
+    thumbnail: AshaImg,
+    poster: AshaImg,
     videoUrl: "https://storage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
     duration: "55s",
     emotionalState: 'The Fulfillment'
@@ -159,7 +161,7 @@ const QUIZZES: Quiz[] = [
     id: 1,
     title: "Ghar Banane ka Gyan",
     description: "Kya aap jaante hain mazboot ghar ka raaz?",
-    thumbnail: "https://images.unsplash.com/photo-1503387762-592dee58c160?auto=format&fit=crop&w=400&h=200&q=80",
+    thumbnail: AmanImg,
     questions: [
       {
         question: "Cement ki quality check karne ka sahi tareeka kya hai?",
@@ -386,7 +388,7 @@ const HomeView = ({ onEpisodeSelect, continueWatching, emotionalState, onQuizSel
       {/* Hero Banner */}
       <div className="relative w-full aspect-[9/12] sm:aspect-[16/9] overflow-hidden">
         <img 
-          src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=1200&h=1600&q=80" 
+          src={AmanImg} 
           alt="Aman" 
           className="w-full h-full object-cover object-top"
           referrerPolicy="no-referrer"
@@ -435,7 +437,7 @@ const HomeView = ({ onEpisodeSelect, continueWatching, emotionalState, onQuizSel
             className="flex-1 bg-white/5 rounded-2xl p-4 border border-white/10 flex flex-col items-center text-center active:scale-95 transition-all cursor-pointer"
           >
             <div className="w-20 h-20 rounded-full overflow-hidden mb-3 border-2 border-orange-500">
-              <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=200&h=200&q=80" alt="Aman" className="w-full h-full object-cover object-top" />
+              <img src={AmanImg} alt="Aman" className="w-full h-full object-cover object-top" />
             </div>
             <h3 className="font-bold text-sm">Aman</h3>
             <p className="text-[10px] text-white/50">The Visionary</p>
@@ -445,7 +447,7 @@ const HomeView = ({ onEpisodeSelect, continueWatching, emotionalState, onQuizSel
             className="flex-1 bg-white/5 rounded-2xl p-4 border border-white/10 flex flex-col items-center text-center active:scale-95 transition-all cursor-pointer"
           >
             <div className="w-20 h-20 rounded-full overflow-hidden mb-3 border-2 border-orange-500">
-              <img src="https://images.unsplash.com/photo-1614283233556-f35b0c801ef1?auto=format&fit=crop&w=200&h=200&q=80" alt="Asha" className="w-full h-full object-cover object-top" />
+              <img src={AshaImg} alt="Asha" className="w-full h-full object-cover object-top" />
             </div>
             <h3 className="font-bold text-sm">Asha</h3>
             <p className="text-[10px] text-white/50">The Foundation</p>
